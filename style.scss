@@ -150,37 +150,31 @@ h1, h6 {
   /*FONCTIONNEMENT*/
 .fonctionnement {
     margin-bottom: 50px;
-  }
-  
-  .fonctionnement h2 {
-    padding: 20px;
-  }
-  
+    &__number {
+        background-color: #9356dc;
+         color: white;
+          border-radius: 50%;
+           padding: 5px 9px;
+            margin-left: -40px;
+         & h2 {
+            padding: 20px;
+      }
+    }
+}
   .fonctionnement__part li p {
     font-weight: 500;
     margin-left: 19px;
   }
-  
-  .fonctionnement__part li:hover {
-    background: rgb(230, 223, 223);
-  }
-  
-  .fonctionnement__part li:hover .fas {
-    color: #111013;
-  }
-  
   .détail {
     padding-left: 6.3px;
-  }
-  
-  .détail2 {
+  &__2 {
     padding-left: -1.7px;
   }
-  
-  .détail3 {
-    padding-left: -6px;
+}
+   .détail3 {
+    padding-left: -12px;
   }
-  .fonctionnement__part li {
+   .fonctionnement__part li {
     list-style-type: none;
     cursor: pointer;
     display: flex;
@@ -192,41 +186,26 @@ h1, h6 {
     margin: 15px 20px 15px 30px;
     border-radius: 20px;
     box-shadow: 1px 2px 8px 2px #c4c4c4;
-  background-color: #f5f5f5;
-  height: 65px;
-}
-.fonctionnement__number {
-    background-color: #9356dc;
-    color: white;
-    border-radius: 50%;
-    padding: 5px 9px;
-    margin-left: -40px;
-  }
+    background-color: #f5f5f5;
+    height: 65px;
+        &:hover {
+          background: rgb(230, 223, 223);
+      }
+    }
   
-  .fonctionnement__icon {
+.fonctionnement__part li:hover .fas {
+    color: #111013;
+  }
+.fonctionnement__icon {
     color: grey;
     font-size: 1.2rem;
     margin-left: 20px;
+       &--pink {
+          color: #9356DC;
+            margin-left: 19px;
   }
-  
-  .fonctionnement__icon--pink {
-    color: #9356DC;
-    margin-left: 19px;
-  }
-  .number {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #9356DC;
-  color: #fff;
-  border-radius: 50%;
-  border: 2px solid #9356DC;
-  width: 25px;
-  height: 25px;
-  position: relative;
-  right: 10px;
 }
-/*RESTAURANTS*/
+  /*RESTAURANTS*/
 .restau__title h3 {
     padding: 30px 0px 0px 10px;
     font-size: 24px;
@@ -287,9 +266,7 @@ h1, h6 {
     font-weight: bold;
     transition-duration: 1.75s;
   }
-  
-
-
+ 
 .new {
     color: #008766;
     background: #99E2D0;
@@ -307,21 +284,22 @@ footer {
     border: 0;
     font-size: 100%;
     padding: 25px;
-    color: white;
+    
   }
   
   footer h3 {
     font-family: "Shrikhand", "sans-serif";
     padding: 5px 0 20px 0;
+    color: white;
   }
-  
   footer a {
     color: white;
   }
-  
   footer ul {
     list-style-type: none;
-  }
+ }
+  
+  
   footer ul li {
     padding: 3px 0 10px 0;
     margin-left: -34px;
@@ -337,8 +315,9 @@ footer {
   
   .fa-utensils {
     padding-right: 5px;
-  }
-  /*MEDIA QUARRIES*/
+  } 
+  
+    /*MEDIA QUARRIES*/
 @media screen and (min-width: 700px) {
     .fonctionnement h2 {
       text-align: center;
@@ -395,7 +374,7 @@ footer {
     animation: fadein 9s ease-in-out;
 }
 }
-/*PAGE DES RESTAURANTS*/
+ /*PAGE DES RESTAURANTS*/
 /*HEADER*/
 .menu__head {
     display: flex;
@@ -514,5 +493,27 @@ footer {
   .cross .fa-check-circle {
     color: #fff;
     transition: transform 500ms ease-in-out;
-  }
+  } 
+  
+
+  
+  
  
+ 
+    
+ 
+  
+       
+ 
+     
+
+  
+  
+  
+
+  
+
+
+
+
+  
