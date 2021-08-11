@@ -212,8 +212,14 @@ h1, h6 {
 .fonctionnement {
   margin-bottom: 50px;
 }
-
-.fonctionnement h2 {
+.fonctionnement__number {
+  background-color: #9356dc;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 9px;
+  margin-left: -40px;
+}
+.fonctionnement__number h2 {
   padding: 20px;
 }
 
@@ -222,24 +228,15 @@ h1, h6 {
   margin-left: 19px;
 }
 
-.fonctionnement__part li:hover {
-  background: #e6dfdf;
-}
-
-.fonctionnement__part li:hover .fas {
-  color: #111013;
-}
-
 .détail {
   padding-left: 6.3px;
 }
-
-.détail2 {
+.détail__2 {
   padding-left: -1.7px;
 }
 
 .détail3 {
-  padding-left: -6px;
+  padding-left: -12px;
 }
 
 .fonctionnement__part li {
@@ -268,13 +265,12 @@ h1, h6 {
   background-color: #f5f5f5;
   height: 65px;
 }
+.fonctionnement__part li:hover {
+  background: #e6dfdf;
+}
 
-.fonctionnement__number {
-  background-color: #9356dc;
-  color: white;
-  border-radius: 50%;
-  padding: 5px 9px;
-  margin-left: -40px;
+.fonctionnement__part li:hover .fas {
+  color: #111013;
 }
 
 .fonctionnement__icon {
@@ -282,30 +278,9 @@ h1, h6 {
   font-size: 1.2rem;
   margin-left: 20px;
 }
-
 .fonctionnement__icon--pink {
   color: #9356DC;
   margin-left: 19px;
-}
-
-.number {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #9356DC;
-  color: #fff;
-  border-radius: 50%;
-  border: 2px solid #9356DC;
-  width: 25px;
-  height: 25px;
-  position: relative;
-  right: 10px;
 }
 
 /*RESTAURANTS*/
@@ -411,12 +386,12 @@ footer {
   border: 0;
   font-size: 100%;
   padding: 25px;
-  color: white;
 }
 
 footer h3 {
   font-family: "Shrikhand", "sans-serif";
   padding: 5px 0 20px 0;
+  color: white;
 }
 
 footer a {
