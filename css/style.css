@@ -568,12 +568,10 @@ footer ul .fa-utensils.fa-hands-helping {
   -o-transition: padding-right 450ms ease-in-out;
   transition: padding-right 450ms ease-in-out;
 }
-
 .Name h4 {
   margin: 0;
 }
-
-.Name__descrip {
+.Name h4__descrip {
   font-size: 14px;
 }
 
@@ -614,8 +612,7 @@ footer ul .fa-utensils.fa-hands-helping {
      text-overflow: ellipsis;
   overflow: hidden;
 }
-
-.Box span {
+.Box p span {
   margin-right: 5px;
 }
 
@@ -646,7 +643,7 @@ footer ul .fa-utensils.fa-hands-helping {
   transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 
-.cross .fa-check-circle {
+.fa-check-circle {
   color: #fff;
   -webkit-transition: -webkit-transform 500ms ease-in-out;
   transition: -webkit-transform 500ms ease-in-out;
