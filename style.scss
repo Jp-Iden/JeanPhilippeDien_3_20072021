@@ -279,11 +279,11 @@ footer {
     font-size: 100%;
     padding: 25px;
     color:white;
-  & h3  {
-    font-family: "Shrikhand", "sans-serif";
-    padding: 5px 0 20px 0;
-    color: white;
-   }
+          & h3  {
+            font-family: "Shrikhand", "sans-serif";
+               padding: 5px 0 20px 0;
+                 color: white;
+       }
 }  
  footer a
   {
@@ -297,35 +297,10 @@ footer {
   footer ul .fa-utensils {
     margin-right: 12px;
     padding-right: 5px;
-  &.fa-hands-helping {
-    margin-right: 5px;
-  }
+             &.fa-hands-helping {
+               margin-right: 5px;
+     }
 }   
-
-   
-
-  
- 
-
-  
-    
-
-
-
-
-
-
- 
-  
- 
-
- 
- 
-  
-  
-  
- 
-  
     /*MEDIA QUARRIES*/
 @media screen and (min-width: 700px) {
     .fonctionnement h2 {
@@ -444,46 +419,43 @@ footer {
     position: relative;
     cursor: pointer;
     white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  transition: padding-right 450ms ease-in-out;
-}
-.Name h4 {
-    margin: 0;
-  }
-  
-  .Name__descrip {
-    font-size: 14px;
-  }
-  
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: padding-right 450ms ease-in-out;
+         & h4 {
+            margin: 0;
+                &__descrip {
+                   font-size: 14px;
+             }
+        }
+     }
   .Name:hover {
     padding-right: 75px;
   }
   .Name:hover .cross {
     opacity: 1;
     transform: translate(-50px);
-}
-.Name:hover .fa-check-circle {
+  }
+  .Name:hover .fa-check-circle {
     transform: rotate(360deg);
 }
 .Box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    line-height: 1.5em;
-  }
-  
-  .Box p {
-    margin: 0;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-  }
-  .Box span {
-    margin-right: 5px;
-  }
-  
-  .cross {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.5em;
+}
+.Box p {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+      & span {
+         margin-right: 5px;
+    }
+}
+.cross {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -499,10 +471,50 @@ footer {
     opacity: 0;
     transition: transform 500ms ease-in-out;
   }
-  .cross .fa-check-circle {
+  .fa-check-circle {
     color: #fff;
     transition: transform 500ms ease-in-out;
-  } 
+  }
+   
+
+  
+ 
+
+  
+    
+
+
+
+
+
+
+ 
+  
+ 
+
+ 
+ 
+  
+  
+  
+ 
+  
+          
+             
+
+  
+  
+  
+  
+
+
+
+
+
+
+   
+  
+
   
 
   
