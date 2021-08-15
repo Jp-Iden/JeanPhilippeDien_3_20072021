@@ -161,14 +161,12 @@ h1, h6 {
 }
   
   .détail {
-    padding-left: 6.3px;
-         &__2 {
-            padding-left: -1.7px;
+    padding-left: 5px;
+         &2 {
+            padding-left: 0px;
      }
 }
-   .détail3 {
-    padding-left: -12px;
-  }
+  
   .fonctionnement__part li {
     list-style-type: none;
     cursor: pointer;
@@ -330,18 +328,7 @@ footer {
       padding: 10px 90px;
     }
   }
-  @media screen and (min-width: 900px) {
-    .menu__général {
-        display: flex;
-        justify-content: space-around;
-    }
-  }
-  @media screen and (min-width: 900px) {
-    .menu__général--2 {
-        display: flex;
-        justify-content: column;
-  }
-}
+
 @media screen and (min-width: 900px) {
     footer {
       text-align: center;
@@ -354,9 +341,7 @@ footer {
   .détail2 {
     animation: fadein 7s ease-in-out;
 }
-.détail3 {
-    animation: fadein 9s ease-in-out;
-}
+
 }
  /*PAGE DES RESTAURANTS*/
 /*HEADER*/
