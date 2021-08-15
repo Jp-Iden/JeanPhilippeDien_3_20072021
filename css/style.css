@@ -213,14 +213,10 @@ h1, h6 {
 }
 
 .détail {
-  padding-left: 6.3px;
+  padding-left: 5px;
 }
-.détail__2 {
-  padding-left: -1.7px;
-}
-
-.détail3 {
-  padding-left: -12px;
+.détail2 {
+  padding-left: 0px;
 }
 
 .fonctionnement__part li {
@@ -435,25 +431,6 @@ footer ul .fa-utensils.fa-hands-helping {
   }
 }
 @media screen and (min-width: 900px) {
-  .menu__général {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-}
-@media screen and (min-width: 900px) {
-  .menu__général--2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: column;
-        -ms-flex-pack: column;
-            justify-content: column;
-  }
-}
-@media screen and (min-width: 900px) {
   footer {
     text-align: center;
   }
@@ -467,11 +444,6 @@ footer ul .fa-utensils.fa-hands-helping {
   .détail2 {
     -webkit-animation: fadein 7s ease-in-out;
             animation: fadein 7s ease-in-out;
-  }
-
-  .détail3 {
-    -webkit-animation: fadein 9s ease-in-out;
-            animation: fadein 9s ease-in-out;
   }
 }
 /*PAGE DES RESTAURANTS*/
