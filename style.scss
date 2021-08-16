@@ -1,4 +1,9 @@
 /*GENERAL*/
+$colorlocal:#eaeaea;
+$colorback:  #f6f6f6;
+$colorIcon: #9356DC;
+
+
 * {
     box-sizing: border-box;
   }
@@ -88,14 +93,14 @@ h1, h6 {
   /*LOCALISATION*/
   
     .local {
-      background: #eaeaea;
+      background: $colorlocal;
       display: flex;
       justify-content: center;
       align-items: center;
       box-shadow: inset 0px 5px 5px 0px #dddddd;
            &__search input {
               border: none;
-                background: #eaeaea;
+              background: $colorlocal;
                  font-size: 1rem;
                    padding: 20px 5px 20px 5px;
                     margin-top: 5px;
@@ -108,7 +113,7 @@ h1, h6 {
   
   /*A PROPOS*/
   .présentation {
-    background: #f6f6f6;
+    background: $colorback;
     text-align: center;
     width: 100%;
     padding: 40px 0;
@@ -149,7 +154,7 @@ h1, h6 {
 .fonctionnement {
     margin-bottom: 50px;
     &__number {
-        background-color: #9356dc;
+        background-color: $colorIcon;
          color: white;
           border-radius: 50%;
            padding: 5px 9px;
@@ -199,7 +204,7 @@ h1, h6 {
     font-size: 1.2rem;
     margin-left: 20px;
        &--pink {
-          color: #9356DC;
+          color: $colorIcon;
             margin-left: 19px;
   }
 }                   
@@ -358,7 +363,7 @@ footer {
   }
   /*IMG*/
 .main__menu {
-    background-color: #f6f6f6;
+    background-color: $colorback;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     width: 100%;
@@ -463,6 +468,9 @@ footer {
     color: #fff;
     transition: transform 500ms ease-in-out;
   }
+
+  
+  
    
 
   
