@@ -237,7 +237,8 @@ h1, h6 {
           align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  padding: 25px;
+  padding: 5px;
+  padding-right: 15px;
   margin: 15px 20px 15px 30px;
   border-radius: 20px;
   -webkit-box-shadow: 1px 2px 8px 2px #c4c4c4;
