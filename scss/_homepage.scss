@@ -1,0 +1,234 @@
+  /*LOADING ET ANIMATION*/
+ 
+  @keyframes rotate {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @keyframes loader {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .loader {
+    background: -webkit-linear-gradient(#9356DC, #FF79DA,#99E2D0);
+    width: 100%;
+    height: 100%;
+    font-family: Shrikhand, sans-serif;
+    font-size: 20px;
+    @include centretext;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    animation: loader 2s ease-in-out 3s forwards;
+    animation-delay: 1.5s;
+    @include fonctiondisplay1;
+  }   
+  .loader__glass{
+      animation: rotate 4.2s linear infinite;
+  }
+
+  /*HEADER*/
+  .head h1 {
+    @include centretext;
+  }
+  /*LOCALISATION*/
+  
+    .local {
+      background: $colorlocal;
+      @include fonctiondisplay1;
+      box-shadow: inset 0px 5px 5px 0px #dddddd;
+           &__search input {
+              border: none;
+              background: $colorlocal;
+                 font-size: 1rem;
+                   padding: 20px 5px 20px 5px;
+                    margin-top: 5px;
+                     text-align: center;
+                      width: 150px;
+         }
+      }
+  
+    
+  
+  /*A PROPOS*/
+  .présentation {
+    background: $colorback;
+    @include centretext;
+    width: 100%;
+    padding: 40px 0;
+        & h2 {
+           font-weight: bold;
+            & p {
+              color: #4d4d4d;
+         }
+      }
+    }
+  .btn button {
+    background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    border: 1px solid transparent;
+    border-radius: 30px;
+    padding: 10px 5px;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 4px 4px 6px #aaa;
+    cursor: pointer;
+    height: 50px;
+    width: 190px;
+         &:hover {
+            background-color: #ae80e5 ;
+            background-blend-mode: lighten;
+            @include shadowhover;
+        }
+    }
+    .btn__2 {
+      @include fonctiondisplay1;
+         & button {
+               margin: 30px 0;
+                      padding: 20px;
+                       width: 50%;
+       }
+  }
+  /*FONCTIONNEMENT*/
+.fonctionnement {
+    margin-bottom: 50px;
+    &__number {
+        background-color: $colorIcon;
+         color: white;
+          border-radius: 50%;
+           padding: 5px 9px;
+            margin-left: -40px;
+         & h2 {
+            padding: 20px;
+      }
+    }
+}
+  
+  .détail {
+    padding-left: 5px;
+         &2 {
+            padding-left: 0px;
+     }
+}
+  
+  .fonctionnement__part li {
+    @include list;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 25px;
+    padding-right: 15px;
+    margin: 15px 20px 15px 30px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 8px 2px #c4c4c4;
+    background-color: #f5f5f5;
+    height: 65px;
+        &:hover  {
+          background: rgb(230, 223, 223);
+          &:hover .fas {
+              color: #111013;
+         }
+      }
+  }
+    
+    .fonctionnement__part li p {
+      font-weight: 500;
+      margin-left: 19px;
+    }
+  .fonctionnement__icon {
+    color: grey;
+    font-size: 1.2rem;
+    margin-left: 20px;
+       &--pink {
+          color: $colorIcon;
+            margin-left: 19px;
+  }
+}                   
+    
+ /*RESTAURANTS*/
+  .main__restau {
+    background: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+
+         &--title h3 {
+            padding: 30px 0px 0px 10px;
+              font-size: 24px;
+        }
+     }    
+   
+.card {
+    border-radius: 25px;
+    box-shadow: 4px 4px 6px #aaa;
+     margin: 20px;
+     position: relative;
+     background: #fff;
+      & img {
+          object-fit: cover;
+            border-top-left-radius: 25px;
+              border-top-right-radius: 25px;
+                width: 100%;
+                 height: 100%;
+                 max-height: 220px;
+        }
+      }
+      .card figure {
+        @include nomargin;
+             & figcaption {
+                padding: 10px;
+   }
+}
+ .heart {
+  @include fonctiondisplay3;
+        & h4 {
+          @include nomargin;
+              font-size: 1.5rem;
+     }
+}
+   .fill{
+    color: black;
+    cursor: pointer;
+         &:hover {
+            animation: fill 1.3s ease-in-out;
+              display: inline-block;
+                opacity: 1;
+                 background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+                  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                      font-weight: bold;
+                        transition-duration: 1.75s;
+             }
+    } 
+ .new {
+    color: #008766;
+    background: #99E2D0;
+    border: 5px solid #99E2D0;
+    border-radius: 5px;
+    position: absolute;
+    right: 1%;
+    top: 5%;
+  } 

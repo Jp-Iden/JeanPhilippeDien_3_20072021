@@ -1,0 +1,29 @@
+@mixin fonctiondisplay1 {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+@mixin fonctiondisplay2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin fonctiondisplay3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin shadowhover {
+    box-shadow: 1px 2px 4px #0f0f0f;
+}
+@mixin list{
+    list-style-type: none;
+}
+@mixin centretext {
+    text-align: center;
+}
+@mixin nomargin
+{
+    margin: 0;
+}

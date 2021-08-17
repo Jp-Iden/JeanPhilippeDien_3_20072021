@@ -1,35 +1,5 @@
 @charset "UTF-8";
 /*GENERAL*/
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  font-size: 1rem;
-  font-family: "Roboto", sans-serif;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-li {
-  list-style-type: none;
-}
-
-h2 h6 {
-  margin: 0;
-}
-
-h1, h6 {
-  font-family: Shrikhand, Roboto, sans-serif;
-}
-
 /*LOADING ET ANIMATION*/
 @-webkit-keyframes rotate {
   from {
@@ -128,12 +98,12 @@ h1, h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-shadow: inset 0px 5px 5px 0px #dddddd;
           box-shadow: inset 0px 5px 5px 0px #dddddd;
 }
@@ -187,6 +157,9 @@ h1, h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -357,6 +330,36 @@ h1, h6 {
   top: 5%;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style-type: none;
+}
+
+h2 h6 {
+  margin: 0;
+}
+
+h1, h6 {
+  font-family: Shrikhand, Roboto, sans-serif;
+}
+
 /*FOOTER*/
 footer {
   display: block;
@@ -391,62 +394,6 @@ footer ul .fa-utensils.fa-hands-helping {
   margin-right: 5px;
 }
 
-/*MEDIA QUARRIES*/
-@media screen and (min-width: 700px) {
-  .fonctionnement h2 {
-    text-align: center;
-  }
-}
-.fonctionnement__part {
-  list-style-type: none;
-}
-
-@media screen and (min-width: 700px) {
-  .fonctionnement__part {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-@media screen and (min-width: 700px) {
-  .main__restau--title h3 {
-    width: 100%;
-    text-align: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .menu__title {
-    padding: 10px 90px;
-  }
-}
-@media screen and (min-width: 900px) {
-  footer {
-    text-align: center;
-  }
-}
-@media screen and (min-width: 900px) {
-  .détail {
-    -webkit-animation: fadein 5s ease-in-out;
-            animation: fadein 5s ease-in-out;
-  }
-
-  .détail2 {
-    -webkit-animation: fadein 7s ease-in-out;
-            animation: fadein 7s ease-in-out;
-  }
-}
 /*PAGE DES RESTAURANTS*/
 /*HEADER*/
 .menu__head {
@@ -593,12 +540,12 @@ footer ul .fa-utensils.fa-hands-helping {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #99E2D0;
   width: 50px;
   height: 63px;
@@ -623,4 +570,61 @@ footer ul .fa-utensils.fa-hands-helping {
   -o-transition: transform 500ms ease-in-out;
   transition: transform 500ms ease-in-out;
   transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
+/*MEDIA QUARRIES*/
+@media screen and (min-width: 700px) {
+  .fonctionnement h2 {
+    text-align: center;
+  }
+}
+.fonctionnement__part {
+  list-style-type: none;
+}
+
+@media screen and (min-width: 700px) {
+  .fonctionnement__part {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+@media screen and (min-width: 700px) {
+  .main__restau--title h3 {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu__title {
+    padding: 10px 90px;
+  }
+}
+@media screen and (min-width: 900px) {
+  footer {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 900px) {
+  .détail {
+    -webkit-animation: fadein 5s ease-in-out;
+            animation: fadein 5s ease-in-out;
+  }
+
+  .détail2 {
+    -webkit-animation: fadein 7s ease-in-out;
+            animation: fadein 7s ease-in-out;
+  }
 }

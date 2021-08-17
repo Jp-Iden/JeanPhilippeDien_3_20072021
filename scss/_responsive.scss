@@ -1,0 +1,42 @@
+ /*MEDIA QUARRIES*/
+ @media screen and (min-width: 700px) {
+    .fonctionnement h2 {
+      @include centretext;
+    }
+  }
+  .fonctionnement__part {
+    @include list;
+  }
+  @media screen and (min-width: 700px) {
+    .fonctionnement__part {
+        flex-wrap: wrap;
+        @include fonctiondisplay1;
+        flex-direction: row;
+       
+    }
+  }
+  @media screen and (min-width: 700px) {
+    .main__restau--title h3 {
+      width: 100%;
+      @include centretext;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .menu__title {
+      padding: 10px 90px;
+    }
+  }
+
+@media screen and (min-width: 900px) {
+    footer {
+      @include centretext;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    .détail {
+        animation: fadein 5s ease-in-out;
+  }
+  .détail2 {
+    animation: fadein 7s ease-in-out;
+}
+}
